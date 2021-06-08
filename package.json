@@ -1,0 +1,28 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "lint": "eslint cypress/**/*.sepc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malavshah612/automation-testing.git"
+  },
+  "author": "Malav Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malavshah612/automation-testing/issues"
+  },
+  "homepage": "https://github.com/malavshah612/automation-testing#readme",
+  "devDependencies": {
+    "cypress": "^7.4.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "mocha": "^9.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
