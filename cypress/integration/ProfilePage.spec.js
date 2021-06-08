@@ -25,7 +25,6 @@ describe("Wordpress profile page tests", () => {
       .should("be.visible")
       .contains("Click to change photo");
     cy.wait("@settings").then((xhr) => {
-
       // Test for profile section
       if (
         xhr.response.statusCode === 200 &&
@@ -126,12 +125,11 @@ describe("Wordpress profile page tests", () => {
   });
 
   it("when Click on the help button popover should appear", () => {
-    if (cy.get(".gdpr-banner")) {
+    const banner = cy.get(".gdpr-banner");
+    if (banner) {
       cy.get(".gdpr-banner__buttons .button").click();
     }
-    cy.get(".inline-help > .button > .gridicon > use")
-      .should("be.visible")
-      .click();
+    cy.get(".inline-help .button .gridicon use").should("be.visible").click();
     cy.get(".popover__inner").should("be.visible");
     cy.get(".formatted-header__title").click();
   });

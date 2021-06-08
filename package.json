@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cypress": "cypress open",
+    "cypress:cli": "rm -rf mochawesome-report/ && cypress run",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
     "lint": "eslint cypress/**/*.sepc.js"
   },
   "repository": {
