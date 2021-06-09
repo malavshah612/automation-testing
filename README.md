@@ -28,7 +28,7 @@ npm run cypress:cli
 
 Run cypress test with cypress runner:
 ```
-npm run cpyress
+npm run cypress
 ```
 
 Generate cypress tests HTML report:
