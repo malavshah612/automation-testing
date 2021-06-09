@@ -17,18 +17,29 @@ This project uses [Node](https://nodejs.org) to install, run and manage packages
 ```sh
 $ npm install
 ```
+To make sure for your node and cypress is installed in your machine
+
+ For Node:
+```
+node -v
+```
+
+For Cypress:
+```
+./node_modules/.bin/cypress version
+```
 #### Running tests
 
 The following commands can be used to run tests:
 
-Run cypress tests in command line:
-```
-npm run cypress:cli
-```
-
 Run cypress test with cypress runner:
 ```
 npm run cypress
+```
+
+Run cypress tests in command line:
+```
+npm run cypress:cli
 ```
 
 Generate cypress tests HTML report:
